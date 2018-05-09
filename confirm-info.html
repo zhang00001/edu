@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>确认信息</title>
-    <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/1.1.2/weui.min.css">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet/less" type="text/css" href="css/media.less">
     <script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/zepto/1.1.4/zepto.min.js"></script>
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_648449_6nhhxxz2hsmgf1or.css">
-    <link rel="stylesheet" href="/assets/css/bootstrap-datepicker.min.css">
-    <link rel="stylesheet" href="/assets/css/bootstrap-datepicker3.standalone.min.css">
-
-
-    <script src="/assets/js/bootstrap-datepicker.min.js"></script>
-    <script src="/assets/locales/bootstrap-datepicker.zh-CN.min.js"></script>
 
     <script src="/js/rem.js"></script>
+    <script src="https://cdn.bootcss.com/zepto/1.1.4/zepto.min.js"></script>
+
+
+    <script src="https://cdn.bootcss.com/zepto/1.1.4/zepto.min.js"></script>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/less.js/2.7.2/less.min.js"></script>
+    <script src="/assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="/assets/locales/bootstrap-datepicker.zh-CN.min.js"></script>
 
     <style>
         .items {
@@ -53,14 +53,27 @@
         .weui-input {
             text-indent: 1rem;
         }
+        
+        @media(min-width: 960px) {
+            .bottom-bar {
+                /* left: calc(50vw - 480px); */
+                max-width: 960px;
+                margin: 0 auto;
+            }
+            .navbar {
+                display: none;
+            }
+        }
+        
+        label {
+            font-weight: 300 !important;
+        }
     </style>
 </head>
 
 <body>
     <div class="page">
-
-
-        <div class="navbar icon-button">
+        <div class="navbar icon-button ">
             <i class="icon-back- iconfont "></i>
             <div class="center">确认信息</div>
         </div>
@@ -78,7 +91,9 @@
         <div class="line" style="height: .5rem;"></div>
         <div class="weui-cells">
             <div class="weui-cell">
-                <div class="weui-cell__hd"><i class="icon-email iconfont email" style="font-size: 1rem;margin-right:.5rem;display:block"> </i> </div>
+                <div class="weui-cell__hd">
+                    <i class="icon-email iconfont email" style="font-size: 1rem;margin-right:.5rem;display:block"> </i>
+                </div>
                 <div class="weui-cell__bd">
                     <p>请填写邮寄信息</p>
                 </div>
@@ -86,7 +101,9 @@
             </div>
             <div class="weui-cells weui-cells_form">
                 <div class="weui-cell ">
-                    <div class="weui-cell__hd"><label for="" class="weui-label field-border">收货人</label></div>
+                    <div class="weui-cell__hd">
+                        <label for="" class="weui-label field-border">收货人</label>
+                    </div>
                     <div class="weui-cell__bd">
                         <input class="weui-input" value="" placeholder="">
                     </div>
@@ -97,7 +114,9 @@
             </div>
             <div class="weui-cells weui-cells_form">
                 <div class="weui-cell ">
-                    <div class="weui-cell__hd"><label for="" class="weui-label field-border">手机号</label></div>
+                    <div class="weui-cell__hd">
+                        <label for="" class="weui-label field-border">手机号</label>
+                    </div>
                     <div class="weui-cell__bd">
                         <input class="weui-input" value="" placeholder="">
                     </div>
@@ -106,7 +125,9 @@
                     </div>
                 </div>
                 <div class="weui-cell ">
-                    <div class="weui-cell__hd"><label for="" class="weui-label field-border">所在地区</label></div>
+                    <div class="weui-cell__hd">
+                        <label for="" class="weui-label field-border">所在地区</label>
+                    </div>
                     <div class="weui-cell__bd">
                         <input class="weui-input" value="" placeholder="" disabled>
                     </div>
@@ -115,7 +136,9 @@
                     </div>
                 </div>
                 <div class="weui-cell ">
-                    <div class="weui-cell__hd"><label for="" class="weui-label field-border">详细地址</label></div>
+                    <div class="weui-cell__hd">
+                        <label for="" class="weui-label field-border">详细地址</label>
+                    </div>
                     <div class="weui-cell__bd">
                         <input class="weui-input" value="" placeholder="">
                     </div>
@@ -124,7 +147,9 @@
                     </div>
                 </div>
                 <div class="weui-cell ">
-                    <div class="weui-cell__hd"><label for="" class="weui-label ">默认地址</label></div>
+                    <div class="weui-cell__hd">
+                        <label for="" class="weui-label ">默认地址</label>
+                    </div>
                     <div class="weui-cell__bd">
                         <input class="weui-input" value="" placeholder="" disabled>
                     </div>
@@ -137,7 +162,9 @@
                 </div>
 
                 <div class="weui-cell ">
-                    <div class="weui-cell__hd"><label for="" class="weui-label ">备注</label></div>
+                    <div class="weui-cell__hd">
+                        <label for="" class="weui-label ">备注</label>
+                    </div>
                     <div class="weui-cell__bd">
                         <input class="weui-input" value="" placeholder="" disabled>
                     </div>
@@ -150,8 +177,8 @@
                 </div>
 
             </div>
-            <div class="line" style="height: .5rem;"></div>
-            <div class="bottom-bar ">
+            <div class="line" style="height: .5rem;margin-bottom: 3rem"></div>
+            <div class="bottom-bar bg-white">
                 <div class="padding-half flex-space-between">
                     <div class="flex" style="line-height: 2rem;">
                         <span> 应支付:</span>
@@ -159,7 +186,7 @@
 
                     </div>
                     <div>
-                        <button class="weui-btn weui-btn_primary bg-green">确认支付</button>
+                        <button class="weui-btn weui-btn_primary weui-btn_mini bg-green">确认支付</button>
                     </div>
                 </div>
             </div>
