@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>订单确认</title>
+
+
+    <link rel="stylesheet/less" type="text/css" href="/media.less">
+    <script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js"></script>
+    <script src="/js/rem.js"></script>
+    <script src="https://cdn.bootcss.com/zepto/1.1.4/zepto.min.js"></script>
+
+    <script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/zepto/1.1.4/zepto.min.js"></script>
+    <script src="/js/rem.js"></script>
+    <script src="https://cdn.bootcss.com/less.js/2.7.2/less.min.js"></script>
+    <style>
+        .groups li {}
+        
+        .group-teacher {
+            padding: .5rem;
+            font-size: .7rem;
+            border-bottom: 1px solid #e9e9e9;
+        }
+        
+        .group-teacher .icon-gou,
+        .group-teacher .icon-circle {
+            line-height: 1.2rem;
+        }
+        
+        .group-product {}
+        
+        .icon-gou,
+        .icon-circle {
+            font-size: 1rem;
+            margin-right: .5rem;
+            color: #dadada;
+        }
+        
+        .product {
+            display: flex;
+        }
+        
+        .product-gou {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .price {
+            color: #fc5300;
+            font-size: .7rem;
+        }
+        
+        .items {
+            font-size: .6rem;
+            padding: .5rem;
+        }
+        
+        .items .icon-button i {
+            font-style: normal;
+            margin-right: .5rem;
+        }
+        
+        .items .icon-button span,
+        .items .icon-button div {
+            font-size: .7rem;
+            color: #19CA70;
+            font-weight: 600;
+        }
+        
+        .items .icon-button {
+            line-height: 1.4rem;
+        }
+        
+        .email {
+            color: #fb9337;
+        }
+        
+        .field-border {
+            border-right: 1px solid #d6d6d6;
+        }
+        
+        .weui-input {
+            text-indent: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page bg-gray order-confirm">
+        <div class="navbar" style="    margin-bottom: 0;">
+            <i class="iconfont icon-back-"></i>
+            <div class="center">订单确认</div>
+            <i class="iconfont icon-edit"></i>
+        </div>
+        <div class="wrap">
+
+
+            <ul class="groups bg-white">
+                <li>
+
+                    <ul>
+                        <li class="group-product icon-button  padding-half" style="padding: .5rem">
+                            <div class="product">
+                                <figure class="flex-center">
+                                    <img src="/assets/images/product-summary.png" alt="" style="    ">
+                                </figure>
+                                <div style="padding-left: .5rem">
+                                    <p style="  font-weight: 600;">第0章互联网的概述(发展历史+接入方法+应用)视频课程</p>
+                                    <p style="color:gray;">讲师:申博</p>
+                                    <div class="price" style="color:#ff6a27">￥20</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+            <div class="bottom-bar bg-white conunt">
+
+                <div class="primary flex-space-between padding-half" style="">
+                    <span style="    white-space: nowrap;">
+                    <span> 学分抵用</span>
+                    <span class="small gray">可用0学分(可抵0元)</span>
+                    </span>
+                    <span class="flex">
+                    <div class="border flex" >
+                        <span>
+                            <i class="iconfont  icon-jian"></i>
+                        </span>
+                    <input class="sequire">
+                    <span>
+                            <i class="iconfont icon-plus"></i>
+                        </span>
+
+                </div>
+                <span style="
+        vertical-align: middle;
+        align-items: center;
+        display: flex;
+    "> 学分</span>
+                </span>
+            </div>
+            <div class="weui-cell primary" style="font-size: .7rem">
+                <div class="weui-cell__hd">
+                    <label for="" class="weui-label field-border">优惠券</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" value="" placeholder="" disabled>
+                </div>
+                <div class="weui-cell__ft" style="height: .8rem;">
+                    无可用优惠券
+                    <i class="icon-arrow-right iconfont"></i>
+                </div>
+            </div>
+            <div class="padding-half flex-space-between">
+                <div class="flex" style="line-height: 2rem;">
+                    <span style="font-size: .6rem"> 应支付:</span>
+                    <div class="price" style="color:#ff6a27;">￥99</div>
+
+                </div>
+                <div>
+                    <button class="weui-btn weui-btn_primary bg-green" style="line-height: 1.6rem;font-size: .7rem">确认支付</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

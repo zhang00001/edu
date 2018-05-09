@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>搜索老师</title>
+    <link rel="stylesheet/less" type="text/css" href="/media.less">
+    <script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js"></script>
+    <script src="/js/rem.js"></script>
+    <script src="https://cdn.bootcss.com/zepto/1.1.4/zepto.min.js"></script>
+
+    <script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/zepto/1.1.4/zepto.min.js"></script>
+    <script src="/js/rem.js"></script>
+    <script src="https://cdn.bootcss.com/less.js/2.7.2/less.min.js"></script>
+
+    <style>
+        .search {
+            background: transparent;
+            border: 1px solid #fff;
+            border-radius: 15px;
+            text-indent: 1rem;
+            outline: none;
+            color: #fff;
+            height: 1.5rem;
+            font-size: 0.6rem;
+        }
+        
+        .search::-webkit-input-placeholder {
+            /* WebKit browsers */
+            color: #fff;
+            text-indent: 1rem;
+            /* text-align: center; */
+        }
+        
+        .search:-moz-placeholder {
+            /* Mozilla Firefox 4 to 18 */
+            color: #fff;
+            /* text-align: center; */
+        }
+        
+        .search::-moz-placeholder {
+            /* Mozilla Firefox 19+ */
+            color: #fff;
+            /* text-align: center; */
+        }
+        
+        .search:-ms-input-placeholder {
+            /* Internet Explorer 10+ */
+            color: #fff;
+            /* text-align: center; */
+        }
+        
+        .teacher-list .info {
+            display: flex;
+        }
+        
+        .teacher-list li {
+            padding: .5rem;
+            border-bottom: .5rem solid #ecedf1;
+        }
+        
+        .teacher-list .info .avatar {
+            flex-shrink: 0;
+            padding: 0 1rem;
+        }
+        
+        .avatar img {
+            width: 2.8rem;
+            height: 2.8rem;
+            border-radius: 50%;
+        }
+        
+        .info .content {}
+        
+        .info .meta {
+            display: flex;
+            line-height: 1rem;
+            align-items: center;
+        }
+        
+        .summary {
+            border-bottom: 1px solid #e2e2e2;
+            padding-bottom: .5rem;
+        }
+        
+        .name {
+            font-size: .7rem;
+            font-weight: 600;
+            margin-right: 1rem;
+        }
+        
+        .year {
+            color: #ff8900;
+            font-size: .5rem;
+            padding: 0rem .5rem;
+            border: 1px solid #ff8900;
+            border-radius: 25px;
+        }
+        
+        .actions {
+            margin-top: .5rem;
+        }
+        
+        .actions .base {
+            color: #bca8ff;
+            padding: .25rem .5rem;
+            font-size: .5rem;
+            text-align: center;
+            border: 1px solid #bca8ff;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        
+        .actions .base.success {
+            color: #19ca70;
+            padding: .25rem .5rem;
+            text-align: center;
+            border: 1px solid #19ca70;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page bg-gray serch-teacher">
+        <div class="navbar">
+            <i class="iconfont icon-back-"></i>
+            <div class="center">
+                <input type="text" class="search" placeholder="搜索老师/内容">
+                <i class="iconfont icon-sousuo" style="color: #fff;position: relative;right: 1.3rem;"></i>
+            </div>
+        </div>
+        <div class="wrap">
+
+
+            <ul class="teacher-list">
+                <li class=" bg-white">
+                    <div class="info">
+                        <div class="avatar flex-center">
+                            <img src="/assets/images/teacher-avatar.png" alt="">
+                            <i class="iconfont icon-vip vip"></i>
+                        </div>
+                        <div class="content">
+                            <div class="meta">
+                                <div class="name">刘凯</div>
+                                <div class="year">执业5年</div>
+                            </div>
+                            <div class="summary small">
+                                深知学习的快乐和作用,数字学习的方法和技巧,还将从这些老师的瓶子中获得励志与品格的教育
+                            </div>
+                            <div class="actions">
+                                <div class="base">理论基础</div>
+                                <div class="base success">理论基础</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="bg-white">
+                    <div class="info">
+                        <div class="avatar flex-center">
+                            <img src="/assets/images/teacher-avatar.png" alt="">
+                            <i class="iconfont icon-vip vip"></i>
+                        </div>
+                        <div class="content">
+                            <div class="meta">
+                                <div class="name">刘凯</div>
+                                <div class="year">执业5年</div>
+                            </div>
+                            <div class="summary small">
+                                深知学习的快乐和作用,数字学习的方法和技巧,还将从这些老师的瓶子中获得励志与品格的教育
+                            </div>
+                            <div class="actions">
+                                <div class="base">理论基础</div>
+                                <div class="base success">理论基础</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

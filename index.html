@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>主页</title>
+
+    <link rel="stylesheet/less" type="text/css" href="/media.less">
+    <script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js"></script>
+    <script src="/js/rem.js"></script>
+    <script src="https://cdn.bootcss.com/zepto/1.1.4/zepto.min.js"></script>
+
+    <script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/zepto/1.1.4/zepto.min.js"></script>
+    <script src="/js/rem.js"></script>
+    <script src="https://cdn.bootcss.com/less.js/2.7.2/less.min.js"></script>
+</head>
+
+<body>
+
+
+    <div class="page ">
+
+        <div class="page__bd">
+            <div class="search-bar">
+                <i class="icon-sousuo iconfont icon-search"></i>
+                <input type="text" class="search-input" placeholder="搜科目、老师、课程、机构">
+
+
+                <img src="/assets/images/data.png" alt="" srcset="" style="    width: 1.5rem;
+                float: right;    margin-top: 0.2rem;">
+
+            </div>
+            <div class="banner">
+                <img src="/assets/images/banner.png" alt="" class="img-responsive">
+            </div>
+
+            <div class="weui-cells searchbar-result" id="searchResult" style="display: none;">
+                <div class="weui-cell weui-cell_access">
+                    <div class="weui-cell__bd weui-cell_primary">
+                        <p>实时搜索文本</p>
+                    </div>
+                </div>
+                <div class="weui-cell weui-cell_access">
+                    <div class="weui-cell__bd weui-cell_primary">
+                        <p>实时搜索文本</p>
+                    </div>
+                </div>
+                <div class="weui-cell weui-cell_access">
+                    <div class="weui-cell__bd weui-cell_primary">
+                        <p>实时搜索文本</p>
+                    </div>
+                </div>
+                <div class="weui-cell weui-cell_access">
+                    <div class="weui-cell__bd weui-cell_primary">
+                        <p>实时搜索文本</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 菜单 -->
+            <ul class="menu container">
+                <li class="col-lg-2 col-sm-3 col-xs-3">
+                    <img src="/assets/images/icon/wodeke.png" alt="">
+                    <div>我的课</div>
+                </li>
+                <li class="col-lg-2 col-sm-3 col-xs-3">
+                    <img src="/assets/images/icon/dingjiaoshi.png" alt="">
+                    <div>定教室</div>
+                </li>
+                <li class="col-lg-2 col-sm-3 col-xs-3">
+                    <img src="/assets/images/icon/xuexiying.png" alt="">
+                    <div>学习营</div>
+                </li>
+                <li class="col-lg-2 col-sm-3 col-xs-3">
+                    <img src="/assets/images/icon/chengjibiao.png" alt="">
+                    <div>成绩表</div>
+                </li>
+                <li class="col-lg-2 col-sm-3 col-xs-3">
+                    <img src="/assets/images/icon/shixun.png" alt="">
+                    <div>师训</div>
+                </li>
+                <li class="col-lg-2 col-sm-3 col-xs-3">
+                    <img src="/assets/images/icon/kaipeixun.png" alt="">
+                    <div>开培训</div>
+                </li>
+                <li class="col-lg-2 col-sm-3 col-xs-3">
+                    <img src="/assets/images/icon/beike.png" alt="">
+                    <div>备课</div>
+                </li>
+                <li class="col-lg-2 col-sm-3 col-xs-3">
+                    <img src="/assets/images/icon/chabaobiao.png" alt="">
+                    <div>查报表</div>
+                </li>
+            </ul>
+            <div class="line" style="height:.5rem">
+
+            </div>
+
+            <div class="news">
+                <img src="/assets/images/news-arrow.png" alt="">
+                <h6>开启“互联网+教育”新模式</h6>
+            </div>
+            <div class="line" style="height: 1px;"></div>
+            <div class="offline-edu">
+                <img src="/assets/images/recommand-icon.png" alt="">
+                <h6>好课推荐</h6>
+            </div>
+            <ul class="padding container">
+                <li class="card lesson-summary col-lg-6">
+                    <figure>
+                        <img src="/assets/images/product-summary.png" alt="">
+                    </figure>
+                    <div class="content">
+                        <p style="font-size: .6rem">2018高考语文寒假系统强化班</p>
+                        <div style="" class="lesson-summary-meta">
+                            <div>
+                                <span class="price">￥20&nbsp;</span>
+                                <span style="padding-right: .25rem;font-size: 0.6rem;font-weight: 600"> 语文</span>
+                                <span class="border-line"></span>
+                                <span class="price"> 60课时</span>
+                            </div>
+                            <div style="color: #868686;">1724人已经报名</div>
+                        </div>
+                        <div style="color: #fff;display: inline-block;">
+                            <a class="bg-orange icon-button">
+                                <i class="iconfont  icon-erji"></i>
+                                <span style=" font-size: .6rem;line-height: 1rem;">&nbsp;进教室试听</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="card lesson-summary col-lg-6">
+                    <figure>
+                        <img src="/assets/images/product-summary.png" alt="">
+                    </figure>
+                    <div class="content">
+                        <p style="font-size: .6rem">2018高考语文寒假系统强化班</p>
+                        <div style="" class="lesson-summary-meta">
+                            <div>
+                                <span class="price">￥20&nbsp;</span>
+                                <span style="padding-right: .25rem;font-size: 0.6rem;font-weight: 600"> 语文</span>
+                                <span class="border-line"></span>
+                                <span class="price"> 60课时</span>
+                            </div>
+                            <div style="color: #868686;">1724人已经报名</div>
+                        </div>
+                        <div style="color: #fff;display: inline-block;">
+                            <a class="bg-orange icon-button">
+                                <i class="iconfont  icon-erji"></i>
+                                <span style=" font-size: .6rem;line-height: 1rem;">进教室试听</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="line" style="height:.5rem"></div>
+        <div class="news">
+            <img src="/assets/images/recommand-icon.png" alt="">
+            <h6>线下培训</h6>
+        </div>
+        <div class="padding order" style="margin-bottom: .5rem;">
+            <img src="/assets/images/xianxiapeixun.png" alt="" class="img-responsive">
+            <div class="cover">
+                <div style="margin-bottom: .5rem">
+                    <div class="address icon-button" style="font-size: .7rem">
+                        <i class="iconfont icon-address" style="margin-top: 0.2rem;line-height: 100%;color:#02FFA7;margin-right: .25rem;"></i> 上海淮海路隆盛西餐厅</div>
+                    <div class="date icon-button" style="font-size: .7rem">
+                        <i class="iconfont icon-clock1" style="margin-top: 0.2rem;line-height: 100%;color:#02FFA7;margin-right: .25rem;"></i> 2018/04/25 8:30 至18:00</div>
+                </div>
+                <div class="sig-successed">
+                    <img src="/assets/images/yibaoming.png" alt="" srcset="" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+        <div class="line" style="height: .5rem;"></div>
+        <div class="news">
+            <img src="/assets/images/recommand-icon.png" alt="">
+            <h6>我的课程</h6>
+        </div>
+        <ul class="classes padding-half container">
+            <li class="card classes-summary col-lg-3 col-sm-6 col-xs-6">
+
+
+                <figure>
+                    <img src="/assets/images/class-summary.png" alt=""> </figure>
+
+
+                <div class="class-title" s>Python高端实战班项目视频课程
+                    <div class="learn-process">已学习60%</div>
+                </div>
+                <div style="display: flex;justify-content: space-between">
+                    <div class="icon-button no-padding gray">
+                        <img src="/assets/images//oclick.png" alt="">
+                        <span class="small gray"> 9课程</span>
+                    </div>
+                    <div class="icon-button no-padding gray">
+                        <img src="/assets/images/play.png" alt="">
+                        <span class="small gray"> 8人学习 </span>
+                    </div>
+                </div>
+            </li>
+            <li class="card classes-summary  col-lg-3 col-sm-6 col-xs-6">
+
+
+                <figure>
+                    <img src="/assets/images/class-summary.png" alt=""> </figure>
+
+
+                <div class="class-title" s>Python高端实战班项目视频课程
+                    <div class="learn-process">已学习60%</div>
+                </div>
+                <div style="display: flex;justify-content: space-between">
+                    <div class="icon-button no-padding gray">
+                        <img src="/assets/images//oclick.png" alt="">
+                        <span class="small gray"> 9课程</span>
+                    </div>
+                    <div class="icon-button no-padding gray">
+                        <img src="/assets/images/play.png" alt="" style=" width: 0.4rem;
+                            height: 0.6rem;
+                            margin-top: 0.2rem;
+                            margin-right: 0.2rem;">
+                        <span class="small gray"> 8人学习 </span>
+                    </div>
+                </div>
+            </li>
+            <li class="card classes-summary  col-lg-3 col-sm-6 col-xs-6">
+
+
+                <figure>
+                    <img src="/assets/images/class-summary.png" alt=""> </figure>
+
+
+                <div class="class-title" s>Python高端实战班项目视频课程
+                    <div class="learn-process">已学习60%</div>
+                </div>
+                <div style="display: flex;justify-content: space-between">
+                    <div class="icon-button no-padding gray">
+                        <img src="/assets/images//oclick.png" alt="">
+                        <span class="small gray"> 9课程</span>
+                    </div>
+                    <div class="icon-button no-padding gray">
+                        <img src="/assets/images/play.png" alt="" style=" width: 0.4rem;
+                            height: 0.6rem;
+                            margin-top: 0.2rem;
+                            margin-right: 0.2rem;">
+                        <span class="small gray"> 8人学习 </span>
+                    </div>
+                </div>
+            </li>
+            <li class="card classes-summary  col-lg-3 col-sm-6 col-xs-6">
+
+
+                <figure>
+                    <img src="/assets/images/class-summary.png" alt=""> </figure>
+
+
+                <div class="class-title" s>Python高端实战班项目视频课程
+                    <div class="learn-process">已学习60%</div>
+                </div>
+                <div style="display: flex;justify-content: space-between">
+                    <div class="icon-button no-padding gray">
+                        <img src="/assets/images//oclick.png" alt="">
+                        <span class="small gray"> 9课程</span>
+                    </div>
+                    <div class="icon-button no-padding gray">
+                        <img src="/assets/images/play.png" alt="">
+                        <span class="small gray"> 8人学习 </span>
+                    </div>
+                </div>
+            </li>
+
+
+        </ul>
+        <div class="line" style="    height: 2rem;
+        margin-bottom: 1rem;"></div>
+        <div class="weui-tabbar" style="position: fixed;">
+            <a href="javascript:;" class="weui-tabbar__item weui-bar__item_on">
+                <span style="display: inline-block;position: relative;">
+                    <i class="iconfont icon-home weui-tabbar__icon"></i>
+                    <!-- <span class="weui-badge" style="position: absolute;top: -2px;right: -13px;">8</span> -->
+                </span>
+                <p class="weui-tabbar__label">首页</p>
+            </a>
+            <a href="javascript:;" class="weui-tabbar__item">
+
+                <i class="iconfont icon-subject weui-tabbar__icon"></i>
+                <p class="weui-tabbar__label">课程</p>
+            </a>
+            <a href="javascript:;" class="weui-tabbar__item">
+                <span style="display: inline-block;position: relative;">
+                    <i class="weui-tabbar__icon icon-navig-quanzi iconfont"></i>
+                    <!-- <span class="weui-badge weui-badge_dot" style="position: absolute;top: 0;right: -6px;"></span> -->
+                </span>
+                <p class="weui-tabbar__label">圈子</p>
+            </a>
+            <a href="javascript:;" class="weui-tabbar__item">
+                <span style="display: inline-block;position: relative;">
+                    <i class="weui-tabbar__icon icon-baoming iconfont "></i>
+                </span>
+                <p class="weui-tabbar__label">报名</p>
+            </a>
+            <a href="javascript:;" class="weui-tabbar__item">
+                <span style="display: inline-block;position: relative;">
+                    <i class="icon-wode1 weui-tabbar__icon iconfont"></i>
+                </span>
+                <p class="weui-tabbar__label">我的</p>
+            </a>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="./zepto.min.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+    <!-- <script src="./example.js"></script> -->
+    <script type="text/javascript">
+        $(function() {
+            var $searchBar = $('#searchBar'),
+                $searchResult = $('#searchResult'),
+                $searchText = $('#searchText'),
+                $searchInput = $('#searchInput'),
+                $searchClear = $('#searchClear'),
+                $searchCancel = $('#searchCancel');
+
+            function hideSearchResult() {
+                $searchResult.hide();
+                $searchInput.val('');
+            }
+
+            function cancelSearch() {
+                hideSearchResult();
+                $searchBar.removeClass('weui-search-bar_focusing');
+                $searchText.show();
+            }
+
+            $searchText.on('click', function() {
+                $searchBar.addClass('weui-search-bar_focusing')
+                $searchInput.focus();
+            });
+            $searchInput
+                .on('blur', function() {
+                    if (!this.value.length) cancelSearch();
+                })
+                .on('input', function() {
+                    if (this.value.length) {
+                        $searchResult.show();
+                    } else {
+                        $searchResult.hide();
+                    }
+                });
+            $searchClear.on('click', function() {
+                hideSearchResult();
+                $searchInput.focus();
+            });
+            $searchCancel.on('click', function() {
+                cancelSearch();
+                $searchInput.blur();
+            });
+        });
+    </script>
+
+
+</body>
+
+</html

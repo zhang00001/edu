@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>答题</title>
+    <link rel="stylesheet/less" type="text/css" href="/media.less">
+    <script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js"></script>
+    <script src="/js/rem.js"></script>
+    <script src="https://cdn.bootcss.com/zepto/1.1.4/zepto.min.js"></script>
+
+    <script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/zepto/1.1.4/zepto.min.js"></script>
+    <script src="/js/rem.js"></script>
+    <script src="https://cdn.bootcss.com/less.js/2.7.2/less.min.js"></script>
+    <style>
+        /* 单选题 */
+        
+        .single-anwser {
+            position: relative;
+            padding: .5rem;
+            /* text-indent: 6rem; */
+        }
+        
+        .single-anwser .type {
+            position: absolute;
+            padding: 0 .25rem;
+            font-size: .5rem;
+            color: lightgreen;
+            border: 1px solid lightgreen;
+        }
+        
+        .single-anwser .title {
+            font-size: .7rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        
+        .check-list {
+            padding: .5rem;
+        }
+        
+        .check-list li {
+            padding: .25rem 0;
+            display: flex;
+        }
+        
+        .check-list li i {
+            flex-shrink: 0;
+            font-size: 1.3rem;
+            margin-right: .5rem;
+        }
+        
+        .check-list li span,
+        .check-list li div {
+            font-size: .75rem;
+            line-height: 2rem;
+            width: 100%;
+        }
+        
+        .anwser-card {
+            border-top: 1px solid #bae2d2;
+            border-radius: 5px;
+            padding: .5rem 1rem;
+            /* display: flex; */
+        }
+        
+        .anwser-card .title {
+            font-size: .9rem;
+            display: flex;
+        }
+        
+        .analysis-card {
+            padding: 1rem;
+            border: 1px solid #bae2d2;
+            box-shadow: 0px 4px 0px #cef4e1;
+        }
+        
+        .analysis-card .btn {
+            padding: .25rem .25rem;
+            border: 1px solid lightgreen;
+            font-size: .7rem;
+            font-weight: 600;
+        }
+        
+        .shadow {
+            background: #cef4e1;
+            height: .25rem;
+        }
+        
+        .analysis-card .data {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        
+        .analysis-card .data div {
+            margin-top: 1rem;
+            text-align: center;
+        }
+        
+        .analysis-card .data div span {
+            color: #929292;
+            font-size: .7rem
+        }
+        
+        .green-panel {
+            border: 1px solid #ffb467;
+            color: #ffb467;
+            font-size: .7rem;
+            padding: .5rem;
+        }
+        
+        .address {
+            display: flex;
+            justify-content: space-between;
+            color: #9e9e9e;
+        }
+        
+        .avatar {
+            border-radius: 10px;
+            width: 2.3rem;
+            height: 2.3rem;
+            margin-right: .5rem;
+        }
+        
+        .comments li {
+            padding: .5rem;
+            border-bottom: 1px solid #f8f8f8;
+        }
+        
+        .name {
+            color: #21cb74;
+            font-size: .8rem;
+        }
+        
+        .state {
+            border-radius: 15px;
+            border: 1px solid #ffbb4f;
+            padding: 0rem .5rem;
+            font-size: .5rem;
+            color: #ffa003;
+        }
+        
+        .weui-tabbar i {
+            color: #000;
+            font-size: .8rem;
+        }
+        
+        .weui-tabbar__label {
+            color: #000 !important;
+        }
+        
+        .tabbar-btn {
+            background: #19ca70;
+            /* line-height: 2.3; */
+            color: #fff;
+            margin: .25rem .25rem;
+            border-radius: 5px;
+            padding: .4rem .8rem;
+            font-size: .6rem;
+        }
+        
+        .tabbar-btn i {
+            color: #fff;
+        }
+        
+        .continue-btn {
+            position: absolute;
+            bottom: 30vh;
+            background: #10ba48;
+            padding: .5rem 1.5rem;
+            color: #fff;
+            border-radius: 25px;
+            font-size: .7rem;
+        }
+        
+        .submit-btn {
+            background: #5495b7;
+            position: absolute;
+            bottom: 20vh;
+            padding: .5rem 1.5rem;
+            color: #fff;
+            border-radius: 25px;
+            font-size: .7rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page line anwser-process" style="min-height: 100vh">
+        <div class="navbar ">
+            <i class="iconfont icon-back-"></i>
+            <div class="center">
+                <div class="icon-button">
+                    <div>
+                        <img src="/assets/images/djs1.png" alt="">
+                        <!-- <i class="iconfont icon-naozhong " style="line-height: 1rem"></i> -->
+                        <span> 倒计时29:59</span></div>
+
+                </div>
+
+            </div>
+            <div class="right">
+                <i class="iconfont icon-aa"></i>
+            </div>
+        </div>
+
+        <!-- 单选题 -->
+        <div class="single-anwser bg-white">
+            <div class="type">单选题</div>
+            <div class="title" style="text-indent: 2rem;">《中共中央国务院关于深化教育改革全面推进素质教育的决定》进一步强调指出:“全面推进素质教育,根本上要（）来保障”。</div>
+        </div>
+        <ul class="check-list bg-white">
+            <li>
+                <i class="iconfont icon-check1" style="color:#32cc77"></i>
+                <div>A.靠法治、靠制度</div>
+            </li>
+            <li>
+                <i class="iconfont icon-close" style="color:#ff5c46"></i>
+                <div>B.靠社会</div>
+            </li>
+            <li>
+                <i class="iconfont icon-circle" style="color:#CECECE"></i>
+                <div>C.靠老师</div>
+            </li>
+            <li>
+                <i class="iconfont icon-circle" style="color:#CECECE"></i>
+                <div>D.靠家长</div>
+            </li>
+
+        </ul>
+
+        <div class="bottom-bar bg-white">
+            <div class="padding-half flex-space-between">
+                <div style="padding: 0 .5rem;flex-shrink: 0;">
+                    <!-- <i class="iconfont icon-menu normal"></i> -->
+                    <img src="/assets//images/djs2.png" alt="">
+                    <span class="normal" style="border-right: 1px solid  gray;padding-right: 1rem;"> 10 / 50</span>
+                </div>
+                <div class="flex-space-between" style="width: 100%;">
+                    <div style="
+                    display:  flex;
+                ">
+                        <span class="icon-button" style="display: inline-block">
+                                <!-- <i class="iconfont icon-close" style="color:#c0c0c0;    font-size: .8rem;"></i> -->
+                            <img src="/assets/images/djs3.png" alt="">
+                                <span class="no" style="    font-size: .8rem;"> 0</span></span>
+                        <span class="icon-button" style="display: inline-block">
+                            <!-- <i class="iconfont icon-gou" style="color:#c0c0c0;font-size: .9rem"></i> -->
+                           <img src="/assets/images/djs4.png" alt="">
+                            <span class="yes" style="    font-size: .8rem;"> 0</span>
+
+                        </span>
+
+                    </div>
+                    <button class="tabbar-btn">
+                        <!-- <i class="iconfont icon-pencil2"></i> -->
+                    <img src="/assets/images/djs5.png" alt="">
+                        <span>交卷</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="mask" style="">
+            <div class="flex-center" style="">
+                <div class="cj">
+                    <p>
+                        您的成绩为<span>999</span>分
+                    </p>
+                    <div>
+                        <img src="/assets/images/djs6.png" alt="">还剩<span>48</span>道题未做
+                    </div>
+                    <div>
+                        <img src="/assets/images/djs7.png" alt="">考错<span>2</span>题
+                    </div>
+                </div>
+                <button class="continue-btn">继续答题</button>
+                <button class=" submit-btn ">现在交卷</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>备课</title>
+    <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/1.1.2/weui.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/zepto/1.1.4/zepto.min.js"></script>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_648449_q59ym7pwh0mdvx6r.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap-datepicker3.standalone.min.css">
+
+
+    <script src="/assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="/assets/locales/bootstrap-datepicker.zh-CN.min.js"></script>
+
+    <script src="/js/rem.js"></script>
+
+    <style>
+        .datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left {
+            display: block !important;
+            position: static;
+            width: 100%;
+            text-align: center;
+            top: 2rem;
+            padding: 0 !important;
+            border: none;
+            box-shadow: none;
+            -webkit-box-shadow: none;
+        }
+        
+        .datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left .table-condensed {
+            width: 100%;
+        }
+        
+        .table-condensed thead {
+            color: #19CA70;
+        }
+        
+        .old.day {
+            color: #d4d4d4 !important;
+        }
+        
+        .active.day {
+            background: #19CA70 !important;
+            border-radius: 50% !important;
+        }
+        
+        .datepicker table tr td,
+        .datepicker table tr th {
+            height: 50px;
+        }
+        /* 消除左上角的三角符号 */
+        
+        .datepicker-dropdown:after {
+            display: none !important;
+        }
+        
+        .datepicker-dropdown.datepicker-orient-bottom:before {
+            display: none !important;
+        }
+        
+        .create-note-btn {
+            text-align: center;
+            border: 1px solid #19CA70;
+            border-radius: 50px;
+            color: #19CA70;
+            background: #fff;
+            padding: .5rem 1rem;
+        }
+    </style>
+
+</head>
+
+<body class="bg-gray">
+    <div class="navbar icon-button">
+        <i class="icon-back- iconfont "></i>
+        <div class="center">备课</div>
+    </div>
+    <div id="date"></div>
+    <div class="input-append date" style="display: none;">
+        <input type="text" class="span2"><span class="add-on"><i class="icon-th"></i></span>
+    </div>
+    <div class="bg-gray padding-half" style="margin-top: 424px;">
+        <div class="bg-white padding-half">
+            <h6 style="font-weight: 100;">今天的课程主要是学习如何进行软件的操作,受用匪浅!</h6>
+            <div class="flex-space-between" style="font-size: .5rem;">
+                <div><span class="gray"> 刚刚</span></div>
+                <div class="flex-space-between green" style="line-height: 1rem;">
+                    <div class="icon-button ">
+                        <i class="iconfont icon-share"></i>
+                        <span>分享</span>
+                    </div>
+                    <div class="icon-button">
+                        <i class="iconfont icon-clock2"></i>
+                        <span>设置提醒</span>
+                    </div>
+                    <div class="icon-button ">
+                        <i class="iconfont icon-shanchu"></i>
+                        <span>删除</span>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="flex-center" style="margin-top:1rem">
+            <img src="/assets/images/no-note.png" alt="" style="max-width: 120px;margin-bottom: .5rem">
+
+        </div>
+        <div class="text-center" style="font-size: .8rem;">您还没有相关的课程安排</div>
+
+        <div class="padding-half flex-center">
+            <button class="icon-button create-note-btn"> <i class="icon-plus iconfont" style="    font-size: .5rem;margin-right: .3rem;    line-height: 0.8rem;"></i> <span>创建笔记</span></button>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+
+    <script>
+        $(function() {
+            let datepicker = $(' .input-append.date').datepicker({
+                language: "zh-CN"
+            })
+
+            $(' .input-append.date').datepicker('show');
+            $('.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-bottom').replaceAll('#date');
+        });
+    </script>
+</body>
+
+</html>
